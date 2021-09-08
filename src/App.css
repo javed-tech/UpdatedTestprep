@@ -20,7 +20,7 @@ h6, h5 {
 }
 .navbar {
 	padding: 1rem 1rem;
-	box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.50);
+	box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.30);
 }
 .red {
 	background-color: #e45334;
@@ -281,6 +281,9 @@ margin-top:30px;
 
 
 }
+.border-secondary1{
+	border-color: #d3d3d3!important;
+}
 
 .numr h1 {
 	text-align: center;
@@ -300,10 +303,15 @@ margin-top:30px;
  max-width: 90%;
 }
 }
- @media (min-width: 576px) .navbar-expand-sm .navbar-nav .nav-link {
+ @media (min-width: 576px) {
+ .navbar-expand-sm .navbar-nav .nav-link {
  padding-right: .5rem;
  padding-left: 1.5rem;
 }
+.institution-navbar{
+	width: 100%;
+}
+ }
 /* InstitutionHome css end */
 
 
@@ -446,6 +454,45 @@ NavLink:hover {
 }
 
 /* contentfilter end */
+/* now code for autocomplete search css */
+.autocomplete
+{
+	position: absolute;
+	width: 44%;
+	/* height: 300px !important; */
+	max-height: 300px;
+	z-index: 2;
+}
+.listitem
+{
+	list-style: none;
+	cursor: pointer;
+
+}
+.divitem
+{
+	background-color: white;
+	padding: 8px;
+	margin: 0px;
+
+}
+.list-url
+{
+	text-decoration: none;
+    color: black;
+}
+.scroll {
+	margin-left: 4.063rem;
+	padding:5px;
+	height: 280px!important;
+	width: 100% !important;
+	overflow: auto;
+	text-align:justify;
+
+}
+.search-input{
+	border: none;
+}
 
 /* navbar */
 
@@ -526,6 +573,18 @@ NavLink:hover {
 /* content end */
 
 /* Banner */
+#More{
+	display: none;
+}
+#Btnmore{
+	color: #1568bd;
+	cursor: pointer;
+	transition: ease-in-out;
+}
+.desc{
+	transition: ease-in-out;
+}
+
 
 .bannerImg img {
 	position: relative;
@@ -534,6 +593,7 @@ NavLink:hover {
 .imgA1 {
 	border: 0;
 	width: 100%;
+	z-index: 0;
 }
 
 .imgB1 {
@@ -541,6 +601,7 @@ NavLink:hover {
 	top: 200px;
 	left: 240px;
 	border: 0;
+	z-index: 1;
 }
 
 .fb {
@@ -563,6 +624,7 @@ NavLink:hover {
 	width: 35rem;
 	height: 2.5rem;
 	margin-left: 3.8rem;
+	border: none;
 }
 
 /* searchBar end */

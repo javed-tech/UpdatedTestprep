@@ -1,131 +1,22 @@
 import React from "react";
+import Footer from "../nichecomponents/Footer";
+import Nav from "../nichecomponents/Nav";
 
 const InstitutionHome = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-sm bg-default navbar-default ">
-        <div className="container">
-          {" "}
-          <a className="navbar-brand" href="#">
-            <img src="https://testprepkart.com/search/user/img/logo.png" />
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavbar"
-          >
-            {" "}
-            <span className="navbar-toggler-icon" />{" "}
-          </button>
-          <div className="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul className="navbar-nav mr-auto ml-3">
-              <li className="nav-item">
-                {" "}
-                <a className="nav-link" href="#">
-                  Home
-                </a>{" "}
-              </li>
-              <li className="nav-item dropdown dmenu">
-                {" "}
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbardrop"
-                  data-toggle="dropdown"
-                >
-                  {" "}
-                  Exam{" "}
-                </a>
-                <div className="dropdown-menu sm-menu">
-                  {" "}
-                  <a className="dropdown-item" href="#">
-                    service2
-                  </a>{" "}
-                  <a className="dropdown-item" href="#">
-                    service 2
-                  </a>{" "}
-                  <a className="dropdown-item" href="#">
-                    service 3
-                  </a>{" "}
-                </div>
-              </li>
-              <li className="nav-item">
-                {" "}
-                <a className="nav-link" href="#">
-                  {" "}
-                  Courses
-                </a>{" "}
-              </li>
-              <li className="nav-item dropdown dmenu">
-                {" "}
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbardrop"
-                  data-toggle="dropdown"
-                >
-                  {" "}
-                  Downloads{" "}
-                </a>
-                <div className="dropdown-menu sm-menu">
-                  {" "}
-                  <a className="dropdown-item" href="#">
-                    service2
-                  </a>{" "}
-                  <a className="dropdown-item" href="#">
-                    service 2
-                  </a>{" "}
-                  <a className="dropdown-item" href="#">
-                    service 3
-                  </a>{" "}
-                </div>
-              </li>
-              <li className="nav-item dropdown dmenu">
-                {" "}
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbardrop"
-                  data-toggle="dropdown"
-                >
-                  {" "}
-                  Utility{" "}
-                </a>
-                <div className="dropdown-menu sm-menu">
-                  {" "}
-                  <a className="dropdown-item" href="#">
-                    service2
-                  </a>{" "}
-                  <a className="dropdown-item" href="#">
-                    service 2
-                  </a>{" "}
-                  <a className="dropdown-item" href="#">
-                    service 3
-                  </a>{" "}
-                </div>
-              </li>
-              <li className="nav-item">
-                {" "}
-                <a className="nav-link" href="#">
-                  Contact
-                </a>{" "}
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <Nav/>
       <div className="container">
         <div className="p-5 slidare" style={{ backgroundColor: "#fff" }}>
           <div className="row cofo ">
             <div className="col-md-6 border border-secondary middle-text p-1">
               <div className="d-flex flex-row p-1">
                 <div className="mr-2">
-                  {" "}
+                  
                   <img
                     src="https://testprepkart.com/search/user/img/national-logo.png"
                     alt=""
-                  />{" "}
+                  />
                 </div>
                 <div className="middle-text pl-2">
                   <h5 className="text-blue heading font-weight-bolder">
@@ -172,7 +63,7 @@ const InstitutionHome = () => {
                 >
                   <li className="breadcrumb-item">Home</li>
                   <li className="breadcrumb-item">
-                    Universities &amp; Colleges{" "}
+                    Universities &amp; Colleges
                   </li>
                   <li className="breadcrumb-item">Engineering </li>
                   <li className="breadcrumb-item active" aria-current="page">
@@ -185,13 +76,13 @@ const InstitutionHome = () => {
               <ul className="pagination justify-content-end pre-next mb-0">
                 <li className="page-item">
                   <a className="page-link" href="#">
-                    {" "}
+                    
                     &lt; Previous Collages
                   </a>
                 </li>
                 <li className="page-item">
                   <a className="page-link" href="#">
-                    Next collages &gt;{" "}
+                    Next collages &gt;
                   </a>
                 </li>
               </ul>
@@ -201,40 +92,40 @@ const InstitutionHome = () => {
             <div className="col-md-7">
               <div className="row">
                 <div className="col-md-8 p-1">
-                  {" "}
+                  
                   <img
                     src="https://testprepkart.com/search/user/img/image1.jpg"
                     alt=""
                     className="img-fluid"
-                  />{" "}
+                  />
                 </div>
                 <div className="col-md-4 p-1">
-                  {" "}
+                  
                   <img
                     src="https://testprepkart.com/search/user/img/image1.jpg"
                     alt=""
                     className="img-fluid pb-2"
-                  />{" "}
+                  />
                   <img
                     src="https://testprepkart.com/search/user/img/image1.jpg"
                     alt=""
                     className="img-fluid"
-                  />{" "}
+                  />
                 </div>
               </div>
             </div>
             <div className="col-md-5 ">
-              <div className="border border-secondary banside">
+              <div className="border border-secondary1 banside">
                 <div className="p-3">
                   <div className="row m-0">
-                    <div className="col-md-6 border border-secondary border-right-0 border-bottom-0 middle-text p-1">
+                    <div className="col-md-6 border border-secondary1 border-right-0 border-bottom-0 middle-text p-1">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          {" "}
+                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </div>
                         <div>
                           <h6>Government</h6>
@@ -242,14 +133,14 @@ const InstitutionHome = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6 border border-secondary border-bottom-0 middle-text p-1">
+                    <div className="col-md-6 border border-secondary1 border-bottom-0 middle-text p-1">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          {" "}
+                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </div>
                         <div>
                           <h6>
@@ -259,14 +150,14 @@ const InstitutionHome = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6 border border-secondary border-right-0  border-bottom-0 middle-text p-1">
+                    <div className="col-md-6 border border-secondary1 border-right-0  border-bottom-0 middle-text p-1">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          {" "}
+                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </div>
                         <div>
                           <h6>UG &amp; PG</h6>
@@ -274,14 +165,14 @@ const InstitutionHome = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6 border border-secondary border-bottom-0 middle-text p-1">
+                    <div className="col-md-6 border border-secondary1 border-bottom-0 middle-text p-1">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          {" "}
+                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </div>
                         <div>
                           <h6>158</h6>
@@ -289,14 +180,14 @@ const InstitutionHome = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6 border border-secondary border-right-0  border-bottom-0 middle-text p-2">
+                    <div className="col-md-6 border border-secondary1 border-right-0  border-bottom-0 middle-text p-2">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          {" "}
+                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </div>
                         <div>
                           <h6>1987</h6>
@@ -304,14 +195,14 @@ const InstitutionHome = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6 border border-secondary border-bottom-0 middle-text p-1">
+                    <div className="col-md-6 border border-secondary1 border-bottom-0 middle-text p-1">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          {" "}
+                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </div>
                         <div>
                           <h6>23rd Jan, 2021</h6>
@@ -319,14 +210,14 @@ const InstitutionHome = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6 border border-secondary border-right-0   middle-text p-2">
+                    <div className="col-md-6 border border-secondary1 border-right-0   middle-text p-2">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          {" "}
+                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </div>
                         <div>
                           <h6>1987</h6>
@@ -334,14 +225,14 @@ const InstitutionHome = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6 border border-secondary  middle-text p-2">
+                    <div className="col-md-6 border border-secondary1  middle-text p-2">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          {" "}
+                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
-                          />{" "}
+                          />
                         </div>
                         <div>
                           <h6>23rd Jan, 2021</h6>
@@ -359,12 +250,12 @@ const InstitutionHome = () => {
                     </div>
                     <div className="col-md-6">
                       <div>
-                        {" "}
-                        <span className="fa fa-star checked" />{" "}
-                        <span className="fa fa-star checked" />{" "}
-                        <span className="fa fa-star checked" />{" "}
-                        <span className="fa fa-star" />{" "}
-                        <span className="fa fa-star" />{" "}
+                        
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star checked" />
+                        <span className="fa fa-star" />
+                        <span className="fa fa-star" />
                       </div>
                       <div>
                         <p className="pt-0">Mangalore, Karnataka</p>
@@ -399,26 +290,26 @@ const InstitutionHome = () => {
           <div className="row">
             <div className="col-12">
               <div className="list-group list-group-horizontal tags-list">
-                {" "}
+                
                 <a
                   href="#"
                   className="list-group-item  border-0 text-dark font-weight-bolder mr-2 bac"
                   style={{ backgroundColor: "transparent" }}
                 >
                   Tags:
-                </a>{" "}
+                </a>
                 <a
                   href="#"
                   className="list-group-item  list-group-item-primary mr-2"
                 >
                   Top Engineering Colleges In Karnataka
-                </a>{" "}
+                </a>
                 <a
                   href="#"
                   className="list-group-item  list-group-item-primary mr-2"
                 >
                   NITs In India
-                </a>{" "}
+                </a>
               </div>
             </div>
           </div>
@@ -427,78 +318,78 @@ const InstitutionHome = () => {
           <nav className=" navbar navbar-expand-sm navbar-default sticky-top second-menu">
             <div className="row">
               <div className="col-md-12">
-                <ul className="navbar-nav">
+                <ul className="navbar-nav institution-navbar">
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link first-menu" href="#">
-                      Menu Type{" "}
-                    </a>{" "}
+                      Menu Type
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link active" href="#">
                       Information
-                    </a>{" "}
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link" href="#">
                       Recent
-                    </a>{" "}
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link" href="#">
                       Eligibility
-                    </a>{" "}
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link" href="#">
                       Courses
-                    </a>{" "}
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link" href="#">
                       Fee
-                    </a>{" "}
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link" href="#">
                       Admission
-                    </a>{" "}
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link" href="#">
                       Score &amp; Cutoff
-                    </a>{" "}
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link" href="#">
                       Reservation &amp; Quota
-                    </a>{" "}
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link" href="#">
                       Faculties
-                    </a>{" "}
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link" href="#">
                       Q&amp;A
-                    </a>{" "}
+                    </a>
                   </li>
                   <li className="nav-item">
-                    {" "}
+                    
                     <a className="nav-link" href="#">
                       Placements
-                    </a>{" "}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -518,7 +409,7 @@ const InstitutionHome = () => {
                   irure dolor in reprehenderit in voluptate velit esse cillum
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                   cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.{" "}
+                  mollit anim id est laborum.
                 </p>
                 <p className="redmore">
                   <a href="#">Show More</a>
@@ -530,7 +421,7 @@ const InstitutionHome = () => {
                   href="#"
                   style={{ float: "right", color: "#555", fontWeight: 600 }}
                 >
-                  Custom Resulds{" "}
+                  Custom Resulds
                   <i className="fa fa-filter" aria-hidden="true" />
                 </a>
                 <p
@@ -561,7 +452,7 @@ const InstitutionHome = () => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>{" "}
+                        <a href="#"> Click Here </a>
                       </td>
                     </tr>
                     <tr>
@@ -571,7 +462,7 @@ const InstitutionHome = () => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>{" "}
+                        <a href="#"> Click Here </a>
                       </td>
                     </tr>
                     <tr>
@@ -581,7 +472,7 @@ const InstitutionHome = () => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>{" "}
+                        <a href="#"> Click Here </a>
                       </td>
                     </tr>
                     <tr>
@@ -591,7 +482,7 @@ const InstitutionHome = () => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>{" "}
+                        <a href="#"> Click Here </a>
                       </td>
                     </tr>
                     <tr>
@@ -601,7 +492,7 @@ const InstitutionHome = () => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>{" "}
+                        <a href="#"> Click Here </a>
                       </td>
                     </tr>
                   </tbody>
@@ -621,7 +512,7 @@ const InstitutionHome = () => {
                 <br />
                 <a href="#">
                   DOWNLOAD DATA <i className="fas fa-arrow-right" />
-                </a>{" "}
+                </a>
               </div>
               <div className="colle-ove">
                 <h3 className="hedig">Coursed Offerd</h3>
@@ -659,7 +550,7 @@ const InstitutionHome = () => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>{" "}
+                        <a href="#"> Click Here </a>
                       </td>
                     </tr>
                     <tr>
@@ -669,7 +560,7 @@ const InstitutionHome = () => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>{" "}
+                        <a href="#"> Click Here </a>
                       </td>
                     </tr>
                     <tr>
@@ -679,7 +570,7 @@ const InstitutionHome = () => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>{" "}
+                        <a href="#"> Click Here </a>
                       </td>
                     </tr>
                     <tr>
@@ -689,7 +580,7 @@ const InstitutionHome = () => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>{" "}
+                        <a href="#"> Click Here </a>
                       </td>
                     </tr>
                     <tr>
@@ -699,7 +590,7 @@ const InstitutionHome = () => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>{" "}
+                        <a href="#"> Click Here </a>
                       </td>
                     </tr>
                   </tbody>
@@ -715,7 +606,7 @@ const InstitutionHome = () => {
                 <br />
                 <a href="#">
                   DOWNLOAD DATA <i className="fas fa-arrow-right" />
-                </a>{" "}
+                </a>
               </div>
               <div className="colle-ove">
                 <h3 className="hedig">Recent Announcement</h3>
@@ -746,46 +637,46 @@ const InstitutionHome = () => {
                     <tr>
                       <td>14/12/2020</td>
                       <td>
-                        Advertisement for Maire Tecnimont Research Scholarships{" "}
+                        Advertisement for Maire Tecnimont Research Scholarships
                       </td>
                       <td>
-                        <a href="#">View Details</a>{" "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>14/12/2020</td>
-                      <td>
-                        Advertisement for Maire Tecnimont Research Scholarships{" "}
-                      </td>
-                      <td>
-                        <a href="#">View Details</a>{" "}
+                        <a href="#">View Details</a>
                       </td>
                     </tr>
                     <tr>
                       <td>14/12/2020</td>
                       <td>
-                        Advertisement for Maire Tecnimont Research Scholarships{" "}
+                        Advertisement for Maire Tecnimont Research Scholarships
                       </td>
                       <td>
-                        <a href="#">View Details</a>{" "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>14/12/2020</td>
-                      <td>
-                        Advertisement for Maire Tecnimont Research Scholarships{" "}
-                      </td>
-                      <td>
-                        <a href="#">View Details</a>{" "}
+                        <a href="#">View Details</a>
                       </td>
                     </tr>
                     <tr>
                       <td>14/12/2020</td>
                       <td>
-                        Advertisement for Maire Tecnimont Research Scholarships{" "}
+                        Advertisement for Maire Tecnimont Research Scholarships
                       </td>
                       <td>
-                        <a href="#">View Details</a>{" "}
+                        <a href="#">View Details</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>14/12/2020</td>
+                      <td>
+                        Advertisement for Maire Tecnimont Research Scholarships
+                      </td>
+                      <td>
+                        <a href="#">View Details</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>14/12/2020</td>
+                      <td>
+                        Advertisement for Maire Tecnimont Research Scholarships
+                      </td>
+                      <td>
+                        <a href="#">View Details</a>
                       </td>
                     </tr>
                   </tbody>
@@ -801,7 +692,7 @@ const InstitutionHome = () => {
                 <br />
                 <a href="#">
                   DOWNLOAD DATA <i className="fas fa-arrow-right" />
-                </a>{" "}
+                </a>
               </div>
               <div className="colle-ove">
                 <h3 className="hedig">
@@ -845,7 +736,7 @@ const InstitutionHome = () => {
                   </div>
                   <div className="col-md-6">
                     <h2>
-                      Total Number of <strong>Seats Reserved</strong>{" "}
+                      Total Number of <strong>Seats Reserved</strong>
                     </h2>
                     <h1 style={{ color: "#e34158" }}>300</h1>
                   </div>
@@ -855,7 +746,7 @@ const InstitutionHome = () => {
                   for SC / ST / OBC / Pwd Candidates
                 </p>
                 <p style={{ marginTop: "5px" }}>
-                  {" "}
+                  
                   <i className="fa fa-arrow-circle-right" /> Seats are reserved
                   for SC / ST / OBC / Pwd Candidates
                 </p>
@@ -872,7 +763,7 @@ const InstitutionHome = () => {
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. <a href="#">TRY IT NOW</a>{" "}
+                    aliqua. <a href="#">TRY IT NOW</a>
                   </p>
                 </div>
               </div>
@@ -882,25 +773,25 @@ const InstitutionHome = () => {
                   <form action="/action_page.php">
                     <input type="checkbox" id name defaultValue />
                     <label htmlFor="vehicle1">
-                      {" "}
+                      
                       NRIz Details For This College
                     </label>
                     <br />
                     <input type="checkbox" id name defaultValue />
                     <label htmlFor="vehicle2">
-                      {" "}
+                      
                       NRIz Details For This College
                     </label>
                     <br />
                     <input type="checkbox" id name defaultValue />
                     <label htmlFor="vehicle3">
-                      {" "}
+                      
                       NRIz Details For This College
                     </label>
                     <br />
                     <input type="checkbox" id name defaultValue />
                     <label htmlFor="vehicle3">
-                      {" "}
+                      
                       NRIz Details For This College.
                     </label>
                     <br />
@@ -909,13 +800,14 @@ const InstitutionHome = () => {
                 </div>
                 <a href="#">
                   UNLOCK &amp; SHOW DETAILS <i className="fas fa-arrow-right" />
-                </a>{" "}
+                </a>
               </div>
             </div>
           </div>
         </div>
         {/*cen-part*/}
       </div>
+      <Footer/>
     </>
   );
 };

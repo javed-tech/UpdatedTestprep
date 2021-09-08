@@ -7,6 +7,7 @@ import BodyPart from './Targetcomponents/BodyPart';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import CollegeListing from './Targetcomponents/CollegeListing';
 import Home from './Homepage/Home';
+import InstitutionHome from './Homepage/InstitutionHome'
 function App() {
   return (
     <div className="App ">
@@ -15,6 +16,7 @@ function App() {
         <Route path="/BodyPart" component={BodyPart}/>
         <Route path="/Home" component={Home}/>
         <Route path="/CollegeListing" component={CollegeListing}/>
+        <Route path="/InstitutionHome" component={InstitutionHome}/>
         <Redirect to="/" />
       </Switch>
 
