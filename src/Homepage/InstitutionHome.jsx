@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../nichecomponents/Footer";
 import Nav from "../nichecomponents/Nav";
 
-const InstitutionHome = () => {
+const InstitutionHome = (props) => {
   return (
     <>
     <Nav/>
@@ -20,7 +20,8 @@ const InstitutionHome = () => {
                 </div>
                 <div className="middle-text pl-2">
                   <h5 className="text-blue heading font-weight-bolder">
-                    National Institute of Technology, Surathkal
+                    {/* National Institute of Technology, Surathkal */}
+                    {props.name}
                   </h5>
                   <p className="sub-heading text-ligtgray">
                     Srinivasnagar PO, Surathkal, Mangalore, Karnataka - 575025

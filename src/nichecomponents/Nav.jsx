@@ -3,27 +3,37 @@ import { Link, NavLink } from "react-router-dom";
 import SearchBar from "material-ui-search-bar";
 import LogoImg from "../Img/logo.png";
 import $ from "jquery";
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
+import parseHTML from "html-react-parser";
+import { Fragment } from "react";
+import Dummy from "../Dummy";
+
 function Nav() {
   const [search, setSearch] = useState();
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos").then((res)=>{
-        res.json().then((resp)=>{
-            // console.log(resp)
-            setSearch(resp);
-        })
-    })
-}, [])
-
-$(document).ready(function () {
+  $(document).ready(function () {
     $(".list-url").on("click", function () {
       var data = $(this).attr("data");
+      console.log('mydata',data)
       $("#search").val(data);
+      alert($("#search").val());
       $(".autocomplete").fadeOut();
     });
-    // now code for search
     $("#search").on("keyup", function () {
-      $(".autocomplete").fadeIn();
+      var search=$('#search').val();
+      var urls="https://testprepkart.com/search/api/get-institution";
+      var mydata={'search':search};
+      $.ajax({
+        url: urls,
+        method:'GET',
+        data:mydata,
+        success:function(data){
+          var result=JSON.parse(data);
+          console.log(data);
+          $(".autocomplete").fadeIn();
+          $(".autocomplete").append('<h1>Hello</h1>');
+        }
+      });
+      
     });
   });
 
@@ -44,7 +54,9 @@ $(document).ready(function () {
                   <img src={LogoImg} alt="logo..." />
                 </NavLink>
                 <div className="col-6 ml">
-                  <SearchBar
+                <Dummy className="searchbar"style={{height: "2.5rem",backgroundColor: " #fcf9f9",boxShadow: "5px 5px #fcf9f9"}}/>
+
+                  {/* <SearchBar
                     autoComplete="off"
                     name="search"
                     autoComplete="off"
@@ -56,7 +68,7 @@ $(document).ready(function () {
                       backgroundColor: " #fcf9f9",
                       boxShadow: "5px 5px #fcf9f9",
                     }}
-                  />
+                  /> */}
 
                   {/* <input
                     type="search"
@@ -71,25 +83,24 @@ $(document).ready(function () {
                     class="row autocomplete overflow-hidden"
                     style={{ display: "none" }}
                   >
-                    <ul data-spy="scroll" role="tablist" className="scroll ">
-                      {
-                        search && search.length>0 ?
-                        search.map(items=>
-                          <li className="listitem ">
-                          <div className="divitem">
-                            <NavLink
-                              
-                              to="InstitutionHome?id=items.id"
-                              data="NIT College in India Delhi"
-                              className="list-url"
-                            >
-                              {items.title}
-                            </NavLink>
-                          </div>
-                        </li>
-                            ):"loading"
-                      }      
-                     </ul>
+                    <ul
+                      data-spy="scroll"
+                      role="tablist"
+                      className="scroll "
+                      id="myul"
+                    >
+                              <li className="listitem ">
+                                <div className="divitem">
+                                  <NavLink
+                                    to="InstitutionHome?id=items.id"
+                                    data="NIT College in India Delhi"
+                                    className="list-url"
+                                  >
+                                  NIT College
+                                  </NavLink>
+                                </div>
+                              </li>
+                    </ul>
                   </div>
                 </div>
 

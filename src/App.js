@@ -8,18 +8,21 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import CollegeListing from './Targetcomponents/CollegeListing';
 import Home from './Homepage/Home';
 import InstitutionHome from './Homepage/InstitutionHome'
+import Dummy from './Dummy';
+import Postdata from './Postdata';
 function App() {
   return (
     <div className="App ">
-      <Switch>
+      {/* <Switch>
         <Route exact path="/" component={Filtration}/>
         <Route path="/BodyPart" component={BodyPart}/>
         <Route path="/Home" component={Home}/>
         <Route path="/CollegeListing" component={CollegeListing}/>
         <Route path="/InstitutionHome" component={InstitutionHome}/>
+        <Route  path="/Dummy" component={Dummy}/>
         <Redirect to="/" />
-      </Switch>
-
+      </Switch> */}
+      <Postdata/>
        </div>
   );
 }

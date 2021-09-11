@@ -474,12 +474,18 @@ NavLink:hover {
 	background-color: white;
 	padding: 8px;
 	margin: 0px;
-
+}
+.divitem:hover{
+	background-color: #f1f4f5;
+	color: #000;
 }
 .list-url
 {
 	text-decoration: none;
-    color: black;
+    color: #000;
+}
+.list-url:hover{
+	color: #000;
 }
 .scroll {
 	margin-left: 4.063rem;
@@ -619,7 +625,9 @@ NavLink:hover {
 /* Banner end */
 
 /* searchBar */
-
+#seachTextfield{
+	border-style: none;
+}
 .searchBar {
 	width: 35rem;
 	height: 2.5rem;
