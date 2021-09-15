@@ -1,15 +1,11 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import SearchBar from "material-ui-search-bar";
+import { NavLink } from "react-router-dom";
 import LogoImg from "../Img/logo.png";
 import $ from "jquery";
-import { useState, useEffect } from "react";
-import parseHTML from "html-react-parser";
 import { Fragment } from "react";
 import Dummy from "../Dummy";
 
 function Nav() {
-  const [search, setSearch] = useState();
   $(document).ready(function () {
     $(".list-url").on("click", function () {
       var data = $(this).attr("data");
@@ -28,7 +24,7 @@ function Nav() {
         data:mydata,
         success:function(data){
           var result=JSON.parse(data);
-          console.log(data);
+          console.log(data,result);
           $(".autocomplete").fadeIn();
           $(".autocomplete").append('<h1>Hello</h1>');
         }
@@ -39,8 +35,6 @@ function Nav() {
 
   const queryParams = new URLSearchParams(window.location.search);
   const id = queryParams.get("id");
-  const name = queryParams.get("name");
-  const type = queryParams.get("type");
   console.log("id =", id); // 55 test null
 
   return (

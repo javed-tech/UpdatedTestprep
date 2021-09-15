@@ -1,19 +1,10 @@
 import React from "react";
-import { ImMap } from "react-icons/im";
-import { FiChevronRight } from "react-icons/fi";
-import { Slider } from "@material-ui/core";
-import {
-  AiFillQuestionCircle,
-} from "react-icons/ai";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
 import Nav from "../nichecomponents/Nav";
 import Footer from "../nichecomponents/Footer";
 import Header from "./Header";
 import Filter from '../nichecomponents/Filter'
+import {NavLink} from 'react-router-dom';
 import $ from 'jquery'
 const CollegeListing = () => {
   $(document).ready(function () {
@@ -61,9 +52,9 @@ const CollegeListing = () => {
             <div className="col-lg-9 col-md-9 col-12 m-0 p-0 ">
               {/* content */}
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h3>Mount Carmel College Of Nursing</h3>
-                </a>
+                </NavLink>
                 <p className="my-4">
                   Sophomore: I enjoy being a part of this college because
                   everyone is super nice and helpful. The advisors and staff are
@@ -91,9 +82,9 @@ const CollegeListing = () => {
               </div>
 
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h3>Mount Carmel College Of Nursing</h3>
-                </a>
+                </NavLink>
                 <p className="my-4">
                   Sophomore: I enjoy being a part of this college because
                   everyone is super nice and helpful. The advisors and staff are
@@ -121,9 +112,9 @@ const CollegeListing = () => {
               </div>
 
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h3>Mount Carmel College Of Nursing</h3>
-                </a>
+                </NavLink>
                 <p className="my-4">
                   Sophomore: I enjoy being a part of this college because
                   everyone is super nice and helpful. The advisors and staff are
@@ -151,9 +142,9 @@ const CollegeListing = () => {
               </div>
 
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h3>Mount Carmel College Of Nursing</h3>
-                </a>
+                </NavLink>
                 <p className="my-4">
                   Sophomore: I enjoy being a part of this college because
                   everyone is super nice and helpful. The advisors and staff are
@@ -181,9 +172,9 @@ const CollegeListing = () => {
               </div>
 
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h3>Mount Carmel College Of Nursing</h3>
-                </a>
+                </NavLink>
                 <p className="my-4">
                   Sophomore: I enjoy being a part of this college because
                   everyone is super nice and helpful. The advisors and staff are
@@ -211,9 +202,9 @@ const CollegeListing = () => {
               </div>
 
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h3>Mount Carmel College Of Nursing</h3>
-                </a>
+                </NavLink>
                 <p className="my-4">
                   Sophomore: I enjoy being a part of this college because
                   everyone is super nice and helpful. The advisors and staff are

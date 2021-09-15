@@ -1,20 +1,10 @@
 import React from "react";
-import { ImMap } from "react-icons/im";
-import { FiChevronRight } from "react-icons/fi";
-import { Slider } from "@material-ui/core";
 import { IoChevronForward } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-import { AiFillQuestionCircle } from "react-icons/ai";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
 import Nav from "../nichecomponents/Nav";
 import Header from "./Header";
 import Footer from "../nichecomponents/Footer";
-import Form from "./Form";
-import CollegeListingFilterImg from "../niche/banner.png";
 import Filter from "../nichecomponents/Filter";
 import $ from "jquery";
 const BodyPart = () => {
@@ -82,7 +72,7 @@ const BodyPart = () => {
                   everyone is super nice and helpful. The advisors and staff are
                   great! They answer emails super fast, usually with a very
                   detailed and thought out response, and sometimes I could just
-                  hug them! The instructors genuin <a href="">Read Reviews</a>
+                  hug them! The instructors genuin <NavLink to="">Read Reviews</NavLink>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
                   facere? Illum sint dolorem voluptatibus numquam suscipit non
                   quisquam explicabo exercitationem repellat sunt nihil labore

@@ -1586,18 +1586,26 @@ NavLink:hover {
 	}
 
 }
-@media only screen and (max-width:765px) {
-	#filterCol-3
-	{
-		display: none;
-	}
+@media only screen and (max-width:767px) {
+	 #filterCol-3{
+		display: none  ;
+	} 
+
+
 }
 @media only screen and (max-width:699px) {
-		
-		#FilterBtn
-		{
-			display: block;
-		}
+
+	#FilterBtn
+	{
+		display: block !important;
+	}
+	#filters
+	{
+		background-color: #008000 !important;
+		color: #fff !important;
+		font-size: 26px !important;
+	}
+
 	.imgA1 {
 		height: 6rem;
 		width: 100%;
@@ -1855,11 +1863,6 @@ NavLink:hover {
 	} 
 	.bottomcontent Button{
 		display: none;
-	}
-	#filters
-	{
-		background-color: #008000 !important;
-		font-size: 26px !important;
 	}
 	.searchBar{
 		width: 100%!important;

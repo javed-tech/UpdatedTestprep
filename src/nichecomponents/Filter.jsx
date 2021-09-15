@@ -2,24 +2,13 @@ import React from "react";
 import { ImMap } from "react-icons/im";
 import { FiChevronRight } from "react-icons/fi";
 import { Slider } from "@material-ui/core";
-import {
-  AiFillQuestionCircle,
-  AiTwotoneStar,
-  AiOutlineStar,
-} from "react-icons/ai";
-import { FaStarHalfAlt, FaHeart } from "react-icons/fa";
-import { BsThreeDots } from "react-icons/bs";
-import { makeStyles } from "@material-ui/core/styles";
-import styled from 'styled-components'
+import {AiFillQuestionCircle} from "react-icons/ai";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
-import Nav from "./Nav";
-import Banner from "./Banner";
-import Footer from "./Footer";
-import { FcVideoCall } from "react-icons/fc";
+import {NavLink} from 'react-router-dom';
 
 const Filter = () => {
   return (
@@ -212,10 +201,10 @@ const Filter = () => {
                 </li>
               </ul>
             </div>
-            <a href="#">
+            <NavLink to="#">
               See All Majors
               <FiChevronRight />
-            </a>
+            </NavLink>
           </div>
           <hr />
           <div className="onlineFriendliness">

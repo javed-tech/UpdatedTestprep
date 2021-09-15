@@ -1,20 +1,8 @@
 import React from "react";
-import { ImMap } from "react-icons/im";
-import { FiChevronRight } from "react-icons/fi";
-import { Slider } from "@material-ui/core";
-import {
-  AiFillQuestionCircle,
-  AiTwotoneStar,
-  AiOutlineStar,
-} from "react-icons/ai";
+import {AiTwotoneStar,AiOutlineStar} from "react-icons/ai";
 import { FaStarHalfAlt, FaHeart } from "react-icons/fa";
 import { BsThreeDots } from "react-icons/bs";
-import { makeStyles } from "@material-ui/core/styles";
 import styled from "styled-components";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
 import Nav from "./Nav";
 import Banner from "./Banner";
@@ -22,6 +10,7 @@ import Footer from "./Footer";
 import { FcVideoCall } from "react-icons/fc";
 import $ from "jquery";
 import Filter from "./Filter";
+import {NavLink} from 'react-router-dom';
 const Filtration = () => {
   $(document).ready(function () {
     const width = $(window).width();
@@ -58,7 +47,7 @@ const Filtration = () => {
       <Banner />
       <div className="main">
         <div className="container-fluid " id="FilterBtn">
-          <Button variant="contained" id='filters' color="primary" className="mt-2"  onClick={myFunction}>
+          <Button variant="contained" id='filters'  className="mt-2"  onClick={myFunction}>
             Filter
           </Button>
         </div>
@@ -73,12 +62,12 @@ const Filtration = () => {
               <div>
                 <ul className=" FilterLinks blogUpdateList my-4 mb-lg-0">
                   <li className=" tpsBottom">
-                    <a className="text-dec text-success" to="/">
+                    <NavLink className="text-dec text-success" to="/">
                       Best Colleges
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="">
-                    <a
+                    <NavLink
                       className="text-dec text-success FilterLinksML"
                       to="/Service"
                     >
@@ -88,44 +77,44 @@ const Filtration = () => {
                       >
                         Beta
                       </span>
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="">
-                    <a
+                    <NavLink
                       className="text-dec text-success FilterLinksML"
                       to="/About"
                     >
                       Best Colleges
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="">
-                    <a
+                    <NavLink
                       className="text-dec text-success FilterLinksML"
                       to="/Contact"
                     >
                       Best Value
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="">
-                    <a className="text-success FilterLinksML" to="/Contact">
+                    <NavLink className="text-success FilterLinksML" to="/Contact">
                       <BsThreeDots />
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
               {/* content */}
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h6 className="mr" style={{ color: "green" }}>
                     #1 Best Colleges In America
                   </h6>
-                </a>
-                <a href="#">
+                </NavLink>
+                <NavLink to="#">
                   <h3 className="contentMount1">
                     Mount Carmel College Of Nursing{" "}
                     <FcVideoCall className="videoIcon" />
                   </h3>
-                </a>
+                </NavLink>
                 <div className="starsHead">
                   <span className="mr">4 Year .</span>
                   <span className="mr">COLUMBUS,OH .</span>
@@ -143,7 +132,7 @@ const Filtration = () => {
                   everyone is super nice and helpful. The advisors and staff are
                   great! They answer emails super fast, usually with a very
                   detailed and thought out response, and sometimes I could just
-                  hug them! The instructors genuin <a href="">Read Reviews</a>
+                  hug them! The instructors genuin <NavLink to="">Read Reviews</NavLink>
                 </p>
                 <div className="bottomRate">
                   <span
@@ -167,10 +156,10 @@ const Filtration = () => {
                   <div className="row mb-0 pb-0">
                     <div className="col-10 mb-0 pb-0">
                       <span className="mrContent ">
-                        <a href="">Will You Get In? |</a>
+                        <NavLink to="">Will You Get In? |</NavLink>
                       </span>
                       <span className="mrContent">
-                        <a href="">Compare</a>
+                        <NavLink to="">Compare</NavLink>
                       </span>
                     </div>
                     <ViewList className="col-2 m-0 p-0 pt-2 ">
@@ -193,17 +182,17 @@ const Filtration = () => {
               </div>
 
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h6 className="mr" style={{ color: "green" }}>
                     #1 Best Colleges In America
                   </h6>
-                </a>
-                <a href="#">
+                </NavLink>
+                <NavLink to="#">
                   <h3>
                     Mount Carmel College Of Nursing{" "}
                     <FcVideoCall className="videoIcon" />
                   </h3>
-                </a>
+                </NavLink>
                 <div className="starsHead">
                   <span className="mr">4 Year .</span>
                   <span className="mr">COLUMBUS,OH .</span>
@@ -221,7 +210,7 @@ const Filtration = () => {
                   everyone is super nice and helpful. The advisors and staff are
                   great! They answer emails super fast, usually with a very
                   detailed and thought out response, and sometimes I could just
-                  hug them! The instructors genuin <a href="">Read Reviews</a>
+                  hug them! The instructors genuin <NavLink to="">Read Reviews</NavLink>
                 </p>
                 <div className="bottomRate">
                   <span
@@ -245,10 +234,10 @@ const Filtration = () => {
                   <div className="row">
                     <div className="col-10">
                       <span className="mrContent">
-                        <a href="">Will You Get In? |</a>
+                        <NavLink to="">Will You Get In? |</NavLink>
                       </span>
                       <span className="mrContent">
-                        <a href="">Compare</a>
+                        <NavLink to="">Compare</NavLink>
                       </span>
                     </div>
                     <div className="col-2 pt-2 ">
@@ -270,17 +259,17 @@ const Filtration = () => {
               </div>
 
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h6 className="mr" style={{ color: "green" }}>
                     #1 Best Colleges In America
                   </h6>
-                </a>
-                <a href="#">
+                </NavLink>
+                <NavLink to="#">
                   <h3>
                     Mount Carmel College Of Nursing{" "}
                     <FcVideoCall className="videoIcon" />
                   </h3>
-                </a>
+                </NavLink>
                 <div className="starsHead">
                   <span className="mr">4 Year .</span>
                   <span className="mr">COLUMBUS,OH .</span>
@@ -298,7 +287,7 @@ const Filtration = () => {
                   everyone is super nice and helpful. The advisors and staff are
                   great! They answer emails super fast, usually with a very
                   detailed and thought out response, and sometimes I could just
-                  hug them! The instructors genuin <a href="">Read Reviews</a>
+                  hug them! The instructors genuin <NavLink to="">Read Reviews</NavLink>
                 </p>
                 <div className="bottomRate">
                   <span
@@ -322,10 +311,10 @@ const Filtration = () => {
                   <div className="row">
                     <div className="col-10">
                       <span className="mrContent">
-                        <a href="">Will You Get In? |</a>
+                        <NavLink to="">Will You Get In? |</NavLink>
                       </span>
                       <span className="mrContent">
-                        <a href="">Compare</a>
+                        <NavLink to="">Compare</NavLink>
                       </span>
                     </div>
                     <div className="col-2 pt-2 ">
@@ -347,17 +336,17 @@ const Filtration = () => {
               </div>
 
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h6 className="mr" style={{ color: "green" }}>
                     #1 Best Colleges In America
                   </h6>
-                </a>
-                <a href="#">
+                </NavLink>
+                <NavLink to="#">
                   <h3>
                     Mount Carmel College Of Nursing{" "}
                     <FcVideoCall className="videoIcon" />
                   </h3>
-                </a>
+                </NavLink>
                 <div className="starsHead">
                   <span className="mr">4 Year .</span>
                   <span className="mr">COLUMBUS,OH .</span>
@@ -375,7 +364,7 @@ const Filtration = () => {
                   everyone is super nice and helpful. The advisors and staff are
                   great! They answer emails super fast, usually with a very
                   detailed and thought out response, and sometimes I could just
-                  hug them! The instructors genuin <a href="">Read Reviews</a>
+                  hug them! The instructors genuin <NavLink to="">Read Reviews</NavLink>
                 </p>
                 <div className="bottomRate">
                   <span
@@ -399,10 +388,10 @@ const Filtration = () => {
                   <div className="row">
                     <div className="col-10">
                       <span className="mrContent">
-                        <a href="">Will You Get In? |</a>
+                        <NavLink to="">Will You Get In? |</NavLink>
                       </span>
                       <span className="mrContent">
-                        <a href="">Compare</a>
+                        <NavLink to="">Compare</NavLink>
                       </span>
                     </div>
                     <div className="col-2 pt-2 ">
@@ -424,17 +413,17 @@ const Filtration = () => {
               </div>
 
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h6 className="mr" style={{ color: "green" }}>
                     #1 Best Colleges In America
                   </h6>
-                </a>
-                <a href="#">
+                </NavLink>
+                <NavLink to="#">
                   <h3>
                     Mount Carmel College Of Nursing{" "}
                     <FcVideoCall className="videoIcon" />
                   </h3>
-                </a>
+                </NavLink>
                 <div className="starsHead">
                   <span className="mr">4 Year .</span>
                   <span className="mr">COLUMBUS,OH .</span>
@@ -452,7 +441,7 @@ const Filtration = () => {
                   everyone is super nice and helpful. The advisors and staff are
                   great! They answer emails super fast, usually with a very
                   detailed and thought out response, and sometimes I could just
-                  hug them! The instructors genuin <a href="">Read Reviews</a>
+                  hug them! The instructors genuin <NavLink to="">Read Reviews</NavLink>
                 </p>
                 <div className="bottomRate">
                   <span
@@ -476,10 +465,10 @@ const Filtration = () => {
                   <div className="row">
                     <div className="col-10">
                       <span className="mrContent">
-                        <a href="">Will You Get In? |</a>
+                        <NavLink to="">Will You Get In? |</NavLink>
                       </span>
                       <span className="mrContent">
-                        <a href="">Compare</a>
+                        <NavLink to="">Compare</NavLink>
                       </span>
                     </div>
                     <div className="col-2 pt-2 ">
@@ -501,17 +490,17 @@ const Filtration = () => {
               </div>
 
               <div className="content my-4">
-                <a href="#">
+                <NavLink to="#">
                   <h6 className="mr" style={{ color: "green" }}>
                     #1 Best Colleges In America
                   </h6>
-                </a>
-                <a href="#">
+                </NavLink>
+                <NavLink to="#">
                   <h3>
                     Mount Carmel College Of Nursing{" "}
                     <FcVideoCall className="videoIcon" />
                   </h3>
-                </a>
+                </NavLink>
                 <div className="starsHead">
                   <span className="mr">4 Year .</span>
                   <span className="mr">COLUMBUS,OH .</span>
@@ -529,7 +518,7 @@ const Filtration = () => {
                   everyone is super nice and helpful. The advisors and staff are
                   great! They answer emails super fast, usually with a very
                   detailed and thought out response, and sometimes I could just
-                  hug them! The instructors genuin <a href="">Read Reviews</a>
+                  hug them! The instructors genuin <NavLink to="">Read Reviews</NavLink>
                 </p>
                 <div className="bottomRate">
                   <span
@@ -553,10 +542,10 @@ const Filtration = () => {
                   <div className="row">
                     <div className="col-10">
                       <span className="mrContent">
-                        <a href="">Will You Get In? |</a>
+                        <NavLink to="">Will You Get In? |</NavLink>
                       </span>
                       <span className="mrContent">
-                        <a href="">Compare</a>
+                        <NavLink to="">Compare</NavLink>
                       </span>
                     </div>
                     <div className="col-2 pt-2 ">

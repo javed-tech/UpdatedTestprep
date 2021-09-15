@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../nichecomponents/Footer";
 import Nav from "../nichecomponents/Nav";
-
+import {NavLink} from 'react-router-dom';
 const InstitutionHome = (props) => {
   return (
     <>
@@ -76,15 +76,15 @@ const InstitutionHome = (props) => {
             <div className="col-md-6">
               <ul className="pagination justify-content-end pre-next mb-0">
                 <li className="page-item">
-                  <a className="page-link" href="#">
+                  <NavLink className="page-link" to="#">
                     
                     &lt; Previous Collages
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="page-item">
-                  <a className="page-link" href="#">
+                  <NavLink className="page-link" to="#">
                     Next collages &gt;
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -263,7 +263,7 @@ const InstitutionHome = (props) => {
                         <p className="pt-0">Phone: 0824 247 4000</p>
                         <p className="pt-0">Email: info@nits.edu</p>
                         <p className="pt-0">
-                          Website: <a href="#">www.nitk.edu</a>
+                          Website: <NavLink to="#">www.nitk.edu</NavLink>
                         </p>
                       </div>
                     </div>
@@ -292,25 +292,25 @@ const InstitutionHome = (props) => {
             <div className="col-12">
               <div className="list-group list-group-horizontal tags-list">
                 
-                <a
-                  href="#"
+                <NavLink
+                  to="#"
                   className="list-group-item  border-0 text-dark font-weight-bolder mr-2 bac"
                   style={{ backgroundColor: "transparent" }}
                 >
                   Tags:
-                </a>
-                <a
-                  href="#"
+                </NavLink>
+                <NavLink
+                  to="#"
                   className="list-group-item  list-group-item-primary mr-2"
                 >
                   Top Engineering Colleges In Karnataka
-                </a>
-                <a
-                  href="#"
+                </NavLink>
+                <NavLink
+                  to="#"
                   className="list-group-item  list-group-item-primary mr-2"
                 >
                   NITs In India
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
@@ -322,75 +322,75 @@ const InstitutionHome = (props) => {
                 <ul className="navbar-nav institution-navbar">
                   <li className="nav-item">
                     
-                    <a className="nav-link first-menu" href="#">
+                    <NavLink className="nav-link first-menu" to="#">
                       Menu Type
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
                     
-                    <a className="nav-link active" href="#">
+                    <NavLink className="nav-link active" to="#">
                       Information
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
                     
-                    <a className="nav-link" href="#">
+                    <NavLink className="nav-link" to="#">
                       Recent
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
                     
-                    <a className="nav-link" href="#">
+                    <NavLink className="nav-link" to="#">
                       Eligibility
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
                     
-                    <a className="nav-link" href="#">
+                    <NavLink className="nav-link" to="#">
                       Courses
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
                     
-                    <a className="nav-link" href="#">
+                    <NavLink className="nav-link" to="#">
                       Fee
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
                     
-                    <a className="nav-link" href="#">
+                    <NavLink className="nav-link" to="#">
                       Admission
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
                     
-                    <a className="nav-link" href="#">
+                    <NavLink className="nav-link" to="#">
                       Score &amp; Cutoff
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
                     
-                    <a className="nav-link" href="#">
+                    <NavLink className="nav-link" to="#">
                       Reservation &amp; Quota
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
                     
-                    <a className="nav-link" href="#">
+                    <NavLink className="nav-link" to="#">
                       Faculties
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
                     
-                    <a className="nav-link" href="#">
+                    <NavLink className="nav-link" to="#">
                       Q&amp;A
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
                     
-                    <a className="nav-link" href="#">
+                    <NavLink className="nav-link" to="#">
                       Placements
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -413,18 +413,18 @@ const InstitutionHome = (props) => {
                   mollit anim id est laborum.
                 </p>
                 <p className="redmore">
-                  <a href="#">Show More</a>
+                  <NavLink to="#">Show More</NavLink>
                 </p>
               </div>
               <div className="colle-ove">
                 <h3 className="hedig">Coursed Offerd</h3>
-                <a
-                  href="#"
+                <NavLink
+                  to="#"
                   style={{ float: "right", color: "#555", fontWeight: 600 }}
                 >
                   Custom Resulds
                   <i className="fa fa-filter" aria-hidden="true" />
-                </a>
+                </NavLink>
                 <p
                   style={{
                     color: "#8c8c8c",
@@ -453,7 +453,7 @@ const InstitutionHome = (props) => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>
+                        <NavLink to="#"> Click Here </NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -463,7 +463,7 @@ const InstitutionHome = (props) => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>
+                        <NavLink to="#"> Click Here </NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -473,7 +473,7 @@ const InstitutionHome = (props) => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>
+                        <NavLink to="#"> Click Here </NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -483,7 +483,7 @@ const InstitutionHome = (props) => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>
+                        <NavLink to="#"> Click Here </NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -493,7 +493,7 @@ const InstitutionHome = (props) => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>
+                        <NavLink to="#"> Click Here </NavLink>
                       </td>
                     </tr>
                   </tbody>
@@ -511,18 +511,18 @@ const InstitutionHome = (props) => {
                   adipiscing elit, sed do eiusmod tempor incididunt.
                 </p>
                 <br />
-                <a href="#">
+                <NavLink to="#">
                   DOWNLOAD DATA <i className="fas fa-arrow-right" />
-                </a>
+                </NavLink>
               </div>
               <div className="colle-ove">
                 <h3 className="hedig">Coursed Offerd</h3>
-                <a
-                  href="#"
+                <NavLink
+                  to="#"
                   style={{ float: "right", color: "#555", fontWeight: 600 }}
                 >
                   For B.Tech <i className="fa fa-filter" aria-hidden="true" />
-                </a>
+                </NavLink>
                 <p
                   style={{
                     color: "#8c8c8c",
@@ -551,7 +551,7 @@ const InstitutionHome = (props) => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>
+                        <NavLink to="#"> Click Here </NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -561,7 +561,7 @@ const InstitutionHome = (props) => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>
+                        <NavLink to="#"> Click Here </NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -571,7 +571,7 @@ const InstitutionHome = (props) => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>
+                        <NavLink to="#"> Click Here </NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -581,7 +581,7 @@ const InstitutionHome = (props) => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>
+                        <NavLink to="#"> Click Here </NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -591,7 +591,7 @@ const InstitutionHome = (props) => {
                       <td>JEE Main + Adv. </td>
                       <td>Rs.8 ~10L </td>
                       <td>
-                        <a href="#"> Click Here </a>
+                        <NavLink to="#"> Click Here </NavLink>
                       </td>
                     </tr>
                   </tbody>
@@ -605,18 +605,18 @@ const InstitutionHome = (props) => {
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                 </p>
                 <br />
-                <a href="#">
+                <NavLink to="#">
                   DOWNLOAD DATA <i className="fas fa-arrow-right" />
-                </a>
+                </NavLink>
               </div>
               <div className="colle-ove">
                 <h3 className="hedig">Recent Announcement</h3>
-                <a
-                  href="#"
+                <NavLink
+                  to="#"
                   style={{ float: "right", color: "#555", fontWeight: 600 }}
                 >
                   For B.Tech <i className="fa fa-filter" aria-hidden="true" />
-                </a>
+                </NavLink>
                 <p
                   style={{
                     color: "#8c8c8c",
@@ -641,7 +641,7 @@ const InstitutionHome = (props) => {
                         Advertisement for Maire Tecnimont Research Scholarships
                       </td>
                       <td>
-                        <a href="#">View Details</a>
+                        <NavLink to="#">View Details</NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -650,7 +650,7 @@ const InstitutionHome = (props) => {
                         Advertisement for Maire Tecnimont Research Scholarships
                       </td>
                       <td>
-                        <a href="#">View Details</a>
+                        <NavLink to="#">View Details</NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -659,7 +659,7 @@ const InstitutionHome = (props) => {
                         Advertisement for Maire Tecnimont Research Scholarships
                       </td>
                       <td>
-                        <a href="#">View Details</a>
+                        <NavLink to="#">View Details</NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -668,7 +668,7 @@ const InstitutionHome = (props) => {
                         Advertisement for Maire Tecnimont Research Scholarships
                       </td>
                       <td>
-                        <a href="#">View Details</a>
+                        <NavLink to="#">View Details</NavLink>
                       </td>
                     </tr>
                     <tr>
@@ -677,7 +677,7 @@ const InstitutionHome = (props) => {
                         Advertisement for Maire Tecnimont Research Scholarships
                       </td>
                       <td>
-                        <a href="#">View Details</a>
+                        <NavLink to="#">View Details</NavLink>
                       </td>
                     </tr>
                   </tbody>
@@ -691,9 +691,9 @@ const InstitutionHome = (props) => {
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                 </p>
                 <br />
-                <a href="#">
+                <NavLink to="#">
                   DOWNLOAD DATA <i className="fas fa-arrow-right" />
-                </a>
+                </NavLink>
               </div>
               <div className="colle-ove">
                 <h3 className="hedig">
@@ -713,7 +713,7 @@ const InstitutionHome = (props) => {
                 </p>
                 <br />
                 <p className="redmore">
-                  <a href="#">Show More</a>
+                  <NavLink to="#">Show More</NavLink>
                 </p>
               </div>
               <div className="colle-ove">
@@ -753,7 +753,7 @@ const InstitutionHome = (props) => {
                 </p>
                 <br />
                 <p className="redmore">
-                  <a href="#">Show More</a>
+                  <NavLink to="#">Show More</NavLink>
                 </p>
               </div>
             </div>
@@ -764,7 +764,7 @@ const InstitutionHome = (props) => {
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. <a href="#">TRY IT NOW</a>
+                    aliqua. <NavLink to="#">TRY IT NOW</NavLink>
                   </p>
                 </div>
               </div>
@@ -799,9 +799,9 @@ const InstitutionHome = (props) => {
                     <br />
                   </form>
                 </div>
-                <a href="#">
+                <NavLink to="#">
                   UNLOCK &amp; SHOW DETAILS <i className="fas fa-arrow-right" />
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>

@@ -2,10 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import {AiFillTwitterSquare} from 'react-icons/ai'
 import {ImFacebook2} from 'react-icons/im'
-import {VscSearch} from 'react-icons/vsc'
 import BadgeImg from '../Img/badge.png'
 import nichebannerImg from '../niche/banner-flat.png'
-import {Button} from '@material-ui/core'
 import $ from 'jquery'
 const Banner = () => {
   $(document).ready(function(){

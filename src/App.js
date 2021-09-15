@@ -9,11 +9,11 @@ import CollegeListing from './Targetcomponents/CollegeListing';
 import Home from './Homepage/Home';
 import InstitutionHome from './Homepage/InstitutionHome'
 import Dummy from './Dummy';
-import Postdata from './Postdata';
+// import Postdata from './Postdata';
 function App() {
   return (
     <div className="App ">
-      {/* <Switch>
+      <Switch>
         <Route exact path="/" component={Filtration}/>
         <Route path="/BodyPart" component={BodyPart}/>
         <Route path="/Home" component={Home}/>
@@ -21,8 +21,8 @@ function App() {
         <Route path="/InstitutionHome" component={InstitutionHome}/>
         <Route  path="/Dummy" component={Dummy}/>
         <Redirect to="/" />
-      </Switch> */}
-      <Postdata/>
+      </Switch>
+      {/* <Postdata/> */}
        </div>
   );
 }
