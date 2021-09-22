@@ -19,6 +19,8 @@ import EducationArticles from "./EducationArticles";
 import HomeFooter from "./HomeFooter";
 import HomebannerImg from "../homeImg/home.jpeg";
 import Courses from "./Courses";
+import Degree from "./Degree";
+import NavCd from "./NavCd";
 const useStyles = makeStyles((theme) => ({
   formontrol: {
     minWidth: 200,
@@ -145,7 +147,7 @@ const Home = () => {
         <Featuredcolleges />
         <CareerOption />
         <EducationArticles />
-        <Courses />
+        <NavCd/>
         <HomeFooter />
       </div>
     </>

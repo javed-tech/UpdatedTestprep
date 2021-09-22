@@ -623,10 +623,9 @@ NavLink:hover {
 }
 
 /* Banner end */
-
 /* searchBar */
-#seachTextfield{
-	border-style: none;
+#searchTextfield{
+	background-color: #000;
 }
 .searchBar {
 	width: 35rem;
@@ -1595,17 +1594,6 @@ NavLink:hover {
 }
 @media only screen and (max-width:699px) {
 
-	#FilterBtn
-	{
-		display: block !important;
-	}
-	#filters
-	{
-		background-color: #008000 !important;
-		color: #fff !important;
-		font-size: 26px !important;
-	}
-
 	.imgA1 {
 		height: 6rem;
 		width: 100%;
@@ -1897,3 +1885,23 @@ NavLink:hover {
 }
 
 /*media upto 699px End*/
+
+/* Filter media query */
+@media only screen and (max-width:767px) {
+	#FilterBtn
+	{
+		display: block !important;
+	}
+	#filters
+	{
+		background-color: #008000 !important;
+		color: #fff !important;
+		font-size: 26px !important;
+	}
+
+	.collegeType h6,.GeneralA-S h6, .specificMajor h6, .onlineFriendliness h6, .Cost h6 , .studentBodysize h6 ,.Speciality h6 ,.yourTestscores h6 ,.admissionProcess h6, .Selectivity h6, .religiousAffiliation h6, .goodFor h6, .startingSalary h6{
+		font-size: .8rem;
+	}
+
+}
+/* Filter media query */

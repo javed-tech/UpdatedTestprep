@@ -15,16 +15,6 @@ const Courses =() => {
           }}
         >
           <div className="row  m-0 p-0 ">
-            <ul className="c-dmenuItems blogUpdateList">
-              <li>
-                <NavLink className="text-dec" to="" ><h5 className="c-dHeading" >COURSES IN INDIA</h5></NavLink>
-              </li>
-
-              <li className="">
-               <Link className="text-dec" to="" ><h5 className="c-dHeading1">DEGREES IN INDIA</h5></Link> 
-              </li>
-              <hr className="ml-0 pl-0" width="1040px"/>
-            </ul>
             <div className="col-4 c-dItemsCenter p-0 m-0">
               <div className="c-d p-2">
                 <h5>

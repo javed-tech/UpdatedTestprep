@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "@material-ui/core";
-import Courses from '../cardA/CardA'
-export default (props) => {
+import Courses from "./Courses";
+const Degree =(props) => {
+  return (
       <div className="container-fluid bg-success p-4">
         <div
           className="container EducationArticles bg-light"
@@ -15,23 +16,9 @@ export default (props) => {
           }}
         >
           <div className="row  m-0 p-0 ">
-            <ul className="c-dmenuItems blogUpdateList">
-              <li>
-                <NavLink className="text-dec" to="" >
-                  <h5 className="c-dHeading">COURSES IN INDIA</h5>
-                </NavLink>
-              </li>
-
-              <li className="">
-                <NavLink className="text-dec" to="" >
-                  <h5 className="c-dHeading1">DEGREES IN INDIA</h5>
-                </NavLink>
-              </li>
-              <hr className="m-0 p-0" width="1040px" />
-            </ul>
             <div className="row">
               <div className="col-12">
-                <div className=" EnteranceItems">
+                <div className=" EnteranceItems mt-4">
                   {/* Row 1 */}
                   <div className="row">
                     <div className="col-1 Enterance-List-items mr pt-2 ">
@@ -545,5 +532,6 @@ export default (props) => {
           </div>
         </div>
       </div>
-};
+  )};
+export default Degree;
 
