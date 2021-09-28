@@ -1,7 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Button } from "@material-ui/core";
-import Courses from "./Courses";
 const Degree =(props) => {
   return (
       <div className="container-fluid bg-success p-4">

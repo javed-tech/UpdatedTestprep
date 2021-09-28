@@ -37,7 +37,7 @@ const Banner = () => {
     }
   return (
     <>
-      <div classNameName="bannerImg">
+      <div className="bannerImg">
         <img
           src={nichebannerImg}
           className="imgA1"
@@ -47,12 +47,12 @@ const Banner = () => {
       <div className="bannerBottom">
         <div id="my-container" className="container" >
           <div className="row">
-            <div className="col-3">
-              <img src={BadgeImg} className="imgB1" alt="badge..." />
+            <div className="col-2 m-0 p-0">
+              <img src={BadgeImg} className="imgB1 m-0 p-0" alt="badge..." />
             </div>
-            <div className="col-8">
+            <div className="col-10 m-0 p-0">
               <h2 className="bannerHeading">2022 Best College In America</h2>
-              <div className="desc">
+              <div className="desc m-0 p-0">
                 <p>
                   The Best Colleges ranking is based on rigorous analysis of
                   academic, admissions, financial, and student life data from
@@ -61,13 +61,16 @@ const Banner = () => {
                   <span id="More">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde reprehenderit nulla excepturi, nihil quidem alias magnam 
                   velit veritatis! Totam, similique est. Ipsa, accusamus minus.</span>
                   <span id="Btnmore" onClick={showMore}>Read more</span>
+                  <NavLink to=""><ImFacebook2 className="fb"/></NavLink>
+                  <NavLink to=""><AiFillTwitterSquare className="tweet"/></NavLink>
+
                 </p>
+
               </div>
+
             </div>
-            <div className="col-1">
-              <NavLink to=""><ImFacebook2 className="fb"/></NavLink>
-              <NavLink to=""><AiFillTwitterSquare className="tweet"/></NavLink>
-            </div>
+             {/* <div className="col-1 m-0 p-0"> 
+            </div> */}
           </div>
         </div>
       </div>

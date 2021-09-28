@@ -7,7 +7,7 @@ import Header from "./Header";
 import Footer from "../nichecomponents/Footer";
 import Filter from "../nichecomponents/Filter";
 import $ from "jquery";
-const BodyPart = () => {
+const BlogPage = () => {
   $(document).ready(function () {
     const width = $(window).width();
     if (width < 1000) {
@@ -254,4 +254,4 @@ const BodyPart = () => {
   );
 };
 
-export default BodyPart;
+export default BlogPage;

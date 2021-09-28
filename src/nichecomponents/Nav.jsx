@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import LogoImg from "../Img/logo.png";
+import smallLogo from "../Img/smallLogo.png";
 import $ from "jquery";
-import { Fragment } from "react";
 import Dummy from "../Dummy";
 import { GoThreeBars } from "react-icons/go";
 function Nav() {
@@ -36,15 +36,29 @@ function Nav() {
   const id = queryParams.get("id");
   console.log("id =", id); // 55 test null
 
+  //logo classes change 
+  $(document).ready(function () {
+    const width = $(window).width();
+    if (width < 999) {
+      $("#tpkLogo").removeClass("desktoplogo");
+      $("#tpkLogo").addClass("mobilelogo");
+    } else {
+      $("#tpkLogo").removeClass("mobilelogo");
+      $("#tpkLogo").addClass("desktoplogo");
+    }
+    console.log("width");
+  });
+
   return (
     <>
       <div className="container-fluid  m-0 p-0">
         <div className="row">
           <div className="col-12 mx-auto ">
             <nav className="navbar navbar-expand-lg navbar-light">
-              <div className="container-fluid toggleBtnParent">
-                <NavLink className="logoImg" to="/">
-                  <img src={LogoImg} alt="logo..." />
+              <div className="container-fluid toggleBtnParent  m-0 p-0">
+                <NavLink className="logoImg m-0 p-0" to="/">
+                  <img id="" className="d-none d-lg-block" src={LogoImg} alt="logo.."/>
+                  <img id="" className="d-lg-none mobilelogo" src={smallLogo} alt="logo.."/>
                 </NavLink>
                 <div className="col-6 ml">
                   <Dummy
@@ -68,7 +82,7 @@ function Nav() {
                   </button>
 
                   <div
-                    class="row autocomplete overflow-hidden"
+                    className="row autocomplete overflow-hidden"
                     style={{ display: "none" }}
                   >
                     <ul
@@ -103,15 +117,15 @@ function Nav() {
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink className="nav-link " to="/BodyPart">
-                        Colleges
+                      <NavLink className="nav-link " to="/BlogPage">
+                        Blog
                       </NavLink>
                     </li>
 
                     <li className="nav-item">
-                      <div class="dropdown ">
+                      <div className="dropdown ">
                         <NavLink
-                          class=" nav-link dropdown-toggle"
+                          className=" nav-link dropdown-toggle"
                           to=""
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
@@ -119,24 +133,24 @@ function Nav() {
                           Downloads
                         </NavLink>
                         <ul
-                          class="dropdown-menu"
+                          className="dropdown-menu"
                           aria-labelledby="dropdownMenuButton1"
                         >
                           <li>
-                            <NavLink class="dropdown-item" to="/CollegeListing">
-                              College Listing
+                            <NavLink className="dropdown-item" to="/BlogListing">
+                              Blog Listing
                             </NavLink>
                           </li>
                           <li>
                             <NavLink
-                              class="dropdown-item"
+                              className="dropdown-item"
                               to="/InstitutionHome"
                             >
                               Institution Home
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink class="dropdown-item" to="#">
+                            <NavLink className="dropdown-item" to="#">
                               Something else
                             </NavLink>
                           </li>

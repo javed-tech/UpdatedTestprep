@@ -6,7 +6,7 @@ import Header from "./Header";
 import Filter from '../nichecomponents/Filter'
 import {NavLink} from 'react-router-dom';
 import $ from 'jquery'
-const CollegeListing = () => {
+const BlogListing = () => {
   $(document).ready(function () {
     const width = $(window).width();
     if (width < 1000) {
@@ -243,4 +243,4 @@ const CollegeListing = () => {
   );
 };
 
-export default CollegeListing;
+export default BlogListing;

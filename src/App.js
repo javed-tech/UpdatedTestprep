@@ -2,10 +2,10 @@ import './App.css';
 import './index.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
-import Filtration from './nichecomponents/Filtration';
-import BodyPart from './Targetcomponents/BodyPart';
+import BlogListing from './Targetcomponents/BlogListing';
+import BlogPage from './Targetcomponents/BlogPage';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import CollegeListing from './Targetcomponents/CollegeListing';
+import CollegeListing from './nichecomponents/CollegeListing';
 import Home from './Homepage/Home';
 import InstitutionHome from './Homepage/InstitutionHome'
 import Dummy from './Dummy';
@@ -14,10 +14,10 @@ function App() {
   return (
     <div className="App ">
       <Switch>
-        <Route exact path="/" component={Filtration}/>
-        <Route path="/BodyPart" component={BodyPart}/>
+        <Route exact path="/" component={CollegeListing}/>
+        <Route path="/BlogPage" component={BlogPage}/>
         <Route path="/Home" component={Home}/>
-        <Route path="/CollegeListing" component={CollegeListing}/>
+        <Route path="/BlogListing" component={BlogListing}/>
         <Route path="/InstitutionHome" component={InstitutionHome}/>
         <Route  path="/Dummy" component={Dummy}/>
         <Redirect to="/" />

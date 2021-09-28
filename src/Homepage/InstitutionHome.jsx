@@ -1,30 +1,72 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../nichecomponents/Footer";
 import Nav from "../nichecomponents/Nav";
-import {NavLink} from 'react-router-dom';
-const InstitutionHome = (props) => {
+import { NavLink, Link } from "react-router-dom";
+import $ from "jquery";
+
+const InstitutionHome = ({ src, fallbackSrc, ...props }) => {
+  // get api js
+  const [data, setdata] = useState([]);
+
+  //const getUsers = async () => {
+  // const response = await fetch(
+  //   "http://edxkart.com/api/get-institution-by-id?id=" + getId
+  // );
+  // setdata(await response.json());
+  //   var result= JSON.parse(response);
+  //   alert(result);
+  //  console.log('response',result)
+  //};
+const getImgUrl =()=> { 
+    if (data.logo === null) { 
+        return 'https://testprepkart.com/search/user/img/national-logo.png';
+    }
+    else{
+      return data.logo
+    }
+}
+
+  useEffect(() => {
+    //  getUsers();
+    const path = window.location.pathname.split("/");
+    var getId = path[path.length -1];
+    alert(getId);
+    $(document).ready(function () {
+      // alert(getId);
+      var urls = "http://edxkart.com/api/get-institution-by-id?id=" + getId;
+      $.ajax({
+        url: urls,
+        method: "GET",
+        success: function (data) {
+          // var result=JSON.parse(data);
+          console.log(data.data[0].institution);
+          // alert('s');
+          setdata(data.data[0]);
+        },
+      });
+    });
+  }, []);
+
   return (
     <>
-    <Nav/>
+      <Nav />
       <div className="container">
         <div className="p-5 slidare" style={{ backgroundColor: "#fff" }}>
           <div className="row cofo ">
             <div className="col-md-6 border border-secondary middle-text p-1">
               <div className="d-flex flex-row p-1">
-                <div className="mr-2">
-                  
-                  <img
-                    src="https://testprepkart.com/search/user/img/national-logo.png"
-                    alt=""
-                  />
+                <div className=" institutionLogo">
+                <img src={data.logo? data.logo : "http://mdurohtak.ac.in/Images/logo.jpg"} alt="logo.."/>
                 </div>
+
                 <div className="middle-text pl-2">
-                  <h5 className="text-blue heading font-weight-bolder">
+                  <h5 className="text-blue heading font-weight-bolder mx-4">
                     {/* National Institute of Technology, Surathkal */}
-                    {props.name}
+                    {data.institution}
                   </h5>
-                  <p className="sub-heading text-ligtgray">
-                    Srinivasnagar PO, Surathkal, Mangalore, Karnataka - 575025
+                  <p className="sub-heading text-ligtgray mx-4">
+                    {/* Srinivasnagar PO, Surathkal, Mangalore, Karnataka - 575025 */}
+                    {data.address ? data.address : "---"}
                   </p>
                 </div>
               </div>
@@ -49,9 +91,9 @@ const InstitutionHome = (props) => {
             </div>
             <div className="col-md-1 border border-secondary middle-text px-1">
               <div className="text-center">
-                <button type="button" className="btn btn-danger btn-sm red">
+                <a type="button" href={data.web_url} target="blank" className="btn btn-danger btn-sm red">
                   Official Site
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -77,7 +119,6 @@ const InstitutionHome = (props) => {
               <ul className="pagination justify-content-end pre-next mb-0">
                 <li className="page-item">
                   <NavLink className="page-link" to="#">
-                    
                     &lt; Previous Collages
                   </NavLink>
                 </li>
@@ -93,7 +134,6 @@ const InstitutionHome = (props) => {
             <div className="col-md-7">
               <div className="row">
                 <div className="col-md-8 p-1">
-                  
                   <img
                     src="https://testprepkart.com/search/user/img/image1.jpg"
                     alt=""
@@ -101,7 +141,6 @@ const InstitutionHome = (props) => {
                   />
                 </div>
                 <div className="col-md-4 p-1">
-                  
                   <img
                     src="https://testprepkart.com/search/user/img/image1.jpg"
                     alt=""
@@ -122,14 +161,13 @@ const InstitutionHome = (props) => {
                     <div className="col-md-6 border border-secondary1 border-right-0 border-bottom-0 middle-text p-1">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
                           />
                         </div>
                         <div>
-                          <h6>Government</h6>
+                          <h6>{data.type ? data.type : "-"}</h6>
                           <p>College Type</p>
                         </div>
                       </div>
@@ -137,7 +175,6 @@ const InstitutionHome = (props) => {
                     <div className="col-md-6 border border-secondary1 border-bottom-0 middle-text p-1">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
@@ -145,7 +182,7 @@ const InstitutionHome = (props) => {
                         </div>
                         <div>
                           <h6>
-                            31 <span className="text-sky">(NIRF)</span>
+                            {data.nirf ? data.nirf : "-"} <span className="text-sky">(NIRF)</span>
                           </h6>
                           <p>College Type</p>
                         </div>
@@ -154,7 +191,6 @@ const InstitutionHome = (props) => {
                     <div className="col-md-6 border border-secondary1 border-right-0  border-bottom-0 middle-text p-1">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
@@ -169,7 +205,6 @@ const InstitutionHome = (props) => {
                     <div className="col-md-6 border border-secondary1 border-bottom-0 middle-text p-1">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
@@ -184,14 +219,13 @@ const InstitutionHome = (props) => {
                     <div className="col-md-6 border border-secondary1 border-right-0  border-bottom-0 middle-text p-2">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
                           />
                         </div>
                         <div>
-                          <h6>1987</h6>
+                          <h6>{data.est_year ? data.est_year : "-"}</h6>
                           <p>Established In</p>
                         </div>
                       </div>
@@ -199,7 +233,6 @@ const InstitutionHome = (props) => {
                     <div className="col-md-6 border border-secondary1 border-bottom-0 middle-text p-1">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
@@ -214,14 +247,13 @@ const InstitutionHome = (props) => {
                     <div className="col-md-6 border border-secondary1 border-right-0   middle-text p-2">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
                           />
                         </div>
                         <div>
-                          <h6>1987</h6>
+                          <h6>{data.est_year ? data.est_year : "-"}</h6>
                           <p>Established In</p>
                         </div>
                       </div>
@@ -229,7 +261,6 @@ const InstitutionHome = (props) => {
                     <div className="col-md-6 border border-secondary1  middle-text p-2">
                       <div className="d-flex flex-row">
                         <div className="mr-2 middle-text">
-                          
                           <img
                             src="https://testprepkart.com/search/user/img/bed.jpg"
                             alt=""
@@ -244,14 +275,13 @@ const InstitutionHome = (props) => {
                   </div>
                   <div className="row m-0 pt-3 fobtn">
                     <div className="col-md-6 p-0">
-                      <iframe
+                      <iframe title="youtube"
                         src="https://www.youtube.com/embed/NbyHNASFi6U"
                         style={{ width: "100%", height: "100px" }}
                       />
                     </div>
                     <div className="col-md-6">
                       <div>
-                        
                         <span className="fa fa-star checked" />
                         <span className="fa fa-star checked" />
                         <span className="fa fa-star checked" />
@@ -259,12 +289,13 @@ const InstitutionHome = (props) => {
                         <span className="fa fa-star" />
                       </div>
                       <div>
-                        <p className="pt-0">Mangalore, Karnataka</p>
-                        <p className="pt-0">Phone: 0824 247 4000</p>
-                        <p className="pt-0">Email: info@nits.edu</p>
+                        <p className="pt-0">{data.address ? data.address : "-"}</p>
+                        <p className="pt-0">Phone: {data.contact ? data.contact : "-"}</p>
+                        <p className="pt-0">Email: {data.email ? data.email : "-"}</p>
                         <p className="pt-0">
-                          Website: <NavLink to="#">www.nitk.edu</NavLink>
+                          Website: <a href={data.web_url} target="blank">{data.web_url ? data.web_url : "-"}</a>
                         </p>
+                        
                       </div>
                     </div>
                     <div className="col-md-7 p-0">
@@ -291,7 +322,6 @@ const InstitutionHome = (props) => {
           <div className="row">
             <div className="col-12">
               <div className="list-group list-group-horizontal tags-list">
-                
                 <NavLink
                   to="#"
                   className="list-group-item  border-0 text-dark font-weight-bolder mr-2 bac"
@@ -321,73 +351,61 @@ const InstitutionHome = (props) => {
               <div className="col-md-12">
                 <ul className="navbar-nav institution-navbar">
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link first-menu" to="#">
                       Menu Type
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link active" to="#">
                       Information
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link" to="#">
                       Recent
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link" to="#">
                       Eligibility
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link" to="#">
                       Courses
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link" to="#">
                       Fee
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link" to="#">
                       Admission
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link" to="#">
                       Score &amp; Cutoff
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link" to="#">
                       Reservation &amp; Quota
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link" to="#">
                       Faculties
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link" to="#">
                       Q&amp;A
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    
                     <NavLink className="nav-link" to="#">
                       Placements
                     </NavLink>
@@ -403,18 +421,11 @@ const InstitutionHome = (props) => {
               <div className="colle-ove">
                 <h3 className="hedig">College Overview</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  {data.info ? data.info : "-"}
                 </p>
-                <p className="redmore">
+                {/* <p className="redmore">
                   <NavLink to="#">Show More</NavLink>
-                </p>
+                </p> */}
               </div>
               <div className="colle-ove">
                 <h3 className="hedig">Coursed Offerd</h3>
@@ -747,7 +758,6 @@ const InstitutionHome = (props) => {
                   for SC / ST / OBC / Pwd Candidates
                 </p>
                 <p style={{ marginTop: "5px" }}>
-                  
                   <i className="fa fa-arrow-circle-right" /> Seats are reserved
                   for SC / ST / OBC / Pwd Candidates
                 </p>
@@ -773,28 +783,16 @@ const InstitutionHome = (props) => {
                 <div className="side-form">
                   <form action="/action_page.php">
                     <input type="checkbox" id name defaultValue />
-                    <label htmlFor="vehicle1">
-                      
-                      NRIz Details For This College
-                    </label>
+                    <label>NRIz Details For This College</label>
                     <br />
                     <input type="checkbox" id name defaultValue />
-                    <label htmlFor="vehicle2">
-                      
-                      NRIz Details For This College
-                    </label>
+                    <label>NRIz Details For This College</label>
                     <br />
                     <input type="checkbox" id name defaultValue />
-                    <label htmlFor="vehicle3">
-                      
-                      NRIz Details For This College
-                    </label>
+                    <label>NRIz Details For This College</label>
                     <br />
                     <input type="checkbox" id name defaultValue />
-                    <label htmlFor="vehicle3">
-                      
-                      NRIz Details For This College.
-                    </label>
+                    <label>NRIz Details For This College.</label>
                     <br />
                     <br />
                   </form>
@@ -808,7 +806,7 @@ const InstitutionHome = (props) => {
         </div>
         {/*cen-part*/}
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

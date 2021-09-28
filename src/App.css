@@ -18,6 +18,10 @@ p {
 h6, h5 {
 	margin-bottom:0;
 }
+.institutionLogo img{
+	width: 110px !important;
+	height: 80px !important;
+}
 .navbar {
 	padding: 1rem 1rem;
 	box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.30);
@@ -605,21 +609,21 @@ NavLink:hover {
 .imgB1 {
 	position: absolute;
 	top: 200px;
-	left: 240px;
+	left: 150px;
 	border: 0;
 	z-index: 1;
 }
 
 .fb {
 	color: blueviolet;
-	font-size: 30px;
-	margin-top: 57px;
+	font-size: 25px;
+	 margin-left: 10px; 
 }
 
 .tweet {
 	color: rgb(93, 185, 216);
-	font-size: 40px;
-	margin-top: 3.5rem;
+	font-size: 33px;
+	/* margin-top: 3.5rem; */
 }
 
 /* Banner end */
@@ -1335,6 +1339,18 @@ NavLink:hover {
 		padding: 0px;
 		width: 100%;
 	}
+	.logoImg img { 
+		width: 53%;
+	   }  
+	.MuiInputBase-fullWidth{
+	   margin-left: -77px;
+	   width: 100% !important;
+   }  
+   .navbar-toggler{
+	   position: absolute;
+	   margin-top: -41px;
+	   margin-left: 129px;
+   }
 }
 
 @media only screen and (min-width:700px) and (max-width:999px) {
@@ -1600,9 +1616,12 @@ NavLink:hover {
 	}
 	.imgB1 {
 		position: absolute;
-		top: 180px;
-		left: 30px;
-		width: 15%;
+		top: 138px;
+		left: 7px;
+		width: 12%;
+	}
+	.search_text{
+		width: 180%;
 	}
 	.Footerhr {
 		width: 100%;
@@ -1618,16 +1637,11 @@ NavLink:hover {
 	.my-container {
 		width: 150%;
 	}
-	.desc {
-		font-size: .9rem;
-	}
 	.tweet {
-		display: none;
 		margin-top: 0px;
 	}
 	.fb {
-		margin-left: 0px;
-		display: none;
+		margin-left: .8rem;
 	}
 	#FilterId {
 		margin: 0px;
@@ -1824,25 +1838,37 @@ NavLink:hover {
 	.InstituteIcon {
 		font-size: 1.5rem;
 	}
-	.logoImg img {
-		width: 80%;
+	 .logoImg img { 
+		 width: 53%;
+		}  
+	 .MuiInputBase-fullWidth{
+		margin-left: -77px;
+		width: 100% !important;
+	}  
+	.navbar-toggler{
+		position: absolute;
+    	margin-top: -41px;
+		margin-left: 129px;
 	}
+
 	.navbar-nav {
 		margin-left: 20.5rem;
 	}
 	.bannerHeading {
-		font-size: 1.3rem;
+		font-size: 1rem;
 	}
 	.desc{
 		font-size: 1rem;
+		width: 100%;
 	}
 	.FilterLinksMl{
 		margin: 0px;
 		padding: 0px;
 	}
 	.FilterLinks{
-		font-size: .9rem;
-	}
+		font-size: .7rem;
+		margin-left: -18px;
+	}	
 	.bottomRate span{
 		font-size: .7rem;
 	}
@@ -1853,7 +1879,7 @@ NavLink:hover {
 		display: none;
 	}
 	.searchBar{
-		width: 100%!important;
+		width: 180%!important;
 		margin: 0px !important;
 		padding: 0px !important;
 	}

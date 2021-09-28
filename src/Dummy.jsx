@@ -2,54 +2,53 @@ import React, { useState } from "react";
 import { TextField } from "@material-ui/core";
 import { Autocomplete } from "@material-ui/lab";
 import { IoIosSearch } from "react-icons/io";
-import { makeStyles } from "@material-ui/core";
-import SearchBar from "material-ui-search-bar";
-const useStyles = makeStyles({
-  root: {
-    width: "100%",
-  },
-});
+import {useHistory} from 'react-router-dom'
+import InstitutionHome from "./Homepage/InstitutionHome";
 
 const Dummy = () => {
+  const history = useHistory();
+
   const [myOptions, setMyOptions] = useState([]);
-  const classes = useStyles();
-  const getDataFromAPI = () => {
-    console.log("Options Fetched from API");
-    fetch("https://jsonplaceholder.typicode.com/todos").then((res) => {
-      res.json().then((resp) => {
-        // console.log(resp)
-        setMyOptions(resp);
-      });
-    });
-    console.log("State", myOptions);
+  //const classes = useStyles();
+  if(!myOptions){
+    setMyOptions([]);
+  }
+  else{
+  var getDataFromAPI = async (e) => {
+    const response= await fetch('http://edxkart.com/api/get-institution?search='+e.target.value);
+    setMyOptions(await response.json());
   };
+}
+
+
   return (
     <>
       <Autocomplete
         autoHighlight
         options={myOptions}
-        getOptionLabel={(option) => option.title}
-        renderOption={(option) => (
+        getOptionLabel={(options) => options.institution}
+        renderOption={(options) => (
           <React.Fragment>
             <span
               style={{ cursor: "pointer" }}
               onClick={() => {
-                window.location.href = "InstitutionHome/id=" + option.id;
+              window.location.href= "InstitutionHome/" + options.id;
               }}
             >
-              {<IoIosSearch />} &nbsp;{option.title}
+              {<IoIosSearch />} &nbsp;{options.institution}
             </span>
           </React.Fragment>
         )}
         renderInput={(params) => (
           <TextField
+            id="search_text"
             {...params}
-            className={classes.root}
+            //className={classes.root}
             size="small"
-            onChange={getDataFromAPI}
+            onKeyUp={getDataFromAPI}
             variant="outlined"
             placeholder="Search"
-            //label="Search"
+            fullWidth
           />
           //  <SearchBar
           //  {...params}

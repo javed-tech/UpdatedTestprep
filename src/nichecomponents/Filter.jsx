@@ -30,95 +30,95 @@ const Filter = () => {
           <hr />
           <div className="collegeType">
             <h6>COLLEGE TYPE</h6>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 4-Year
               </label>
             </div>
 
             <ul>
               <li className="unstyled">
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="defaultCheck1"
                   />
-                  <label class="form-check-label" for="defaultCheck1">
+                  <label className="form-check-label" for="defaultCheck1">
                     Private
                   </label>
                 </div>
               </li>
               <li className="unstyled">
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input "
+                    className="form-check-input "
                     type="checkbox"
                     value=""
                     id="defaultCheck1"
                   />
-                  <label class="form-check-label" for="defaultCheck1">
+                  <label className="form-check-label" for="defaultCheck1">
                     Public
                   </label>
                 </div>
               </li>
             </ul>
 
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 2-Year
               </label>
             </div>
 
             <ul>
               <li className="unstyled">
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="defaultCheck1"
                   />
-                  <label class="form-check-label" for="defaultCheck1">
+                  <label className="form-check-label" for="defaultCheck1">
                     Community
                   </label>
                 </div>
               </li>
               <li className="unstyled">
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input "
+                    className="form-check-input "
                     type="checkbox"
                     value=""
                     id="defaultCheck1"
                   />
-                  <label class="form-check-label" for="defaultCheck1">
+                  <label className="form-check-label" for="defaultCheck1">
                     Trade/Career
                   </label>
                 </div>
               </li>
               <li className="unstyled">
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input "
+                    className="form-check-input "
                     type="checkbox"
                     value=""
                     id="defaultCheck1"
                   />
-                  <label class="form-check-label" for="defaultCheck1">
+                  <label className="form-check-label" for="defaultCheck1">
                     Other
                   </label>
                 </div>
@@ -131,9 +131,9 @@ const Filter = () => {
               GENERAL AREA OF STUDY
               <AiFillQuestionCircle />
             </h6>
-            <div class="input-group mb-3">
+            <div className="input-group mb-3">
               <select
-                class="custom-select form-control"
+                className="custom-select form-control"
                 id="inputGroupSelect01"
               >
                 <option selected>Any</option>
@@ -172,29 +172,29 @@ const Filter = () => {
               />
               <ul>
                 <li className="unstyled">
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="checkbox"
                       value=""
                       id="flexCheckDisabled"
                       disabled
                     />
-                    <label class="form-check-label" for="flexCheckDisabled">
+                    <label className="form-check-label" for="flexCheckDisabled">
                       Online
                     </label>
                   </div>
                 </li>
                 <li className="unstyled">
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input "
+                      className="form-check-input "
                       type="checkbox"
                       value=""
                       id="flexCheckDisabled"
                       disabled
                     />
-                    <label class="form-check-label" for="flexCheckDisabled">
+                    <label className="form-check-label" for="flexCheckDisabled">
                       Campus
                     </label>
                   </div>
@@ -212,36 +212,36 @@ const Filter = () => {
               ONLINE FRIENDLINESS
               <AiFillQuestionCircle />
             </h6>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Fully Online
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Large Online Program
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Some Online Degrees
               </label>
             </div>
@@ -287,58 +287,58 @@ const Filter = () => {
               SPECIALITY
               <AiFillQuestionCircle />
             </h6>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Liberal Arts
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 All-Women
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 All-Men
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 HBCU
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Hispanic-Serving Institutions
               </label>
             </div>
@@ -361,8 +361,8 @@ const Filter = () => {
           <hr />
           <div className="admissionProcess">
             <h6>ADMISSIONS PROCESS</h6>
-            <div class="input-group mb-3">
-              <select class="custom-select" id="inputGroupSelect01">
+            <div className="input-group mb-3">
+              <select className="custom-select" id="inputGroupSelect01">
                 <option selected>Any</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -376,58 +376,58 @@ const Filter = () => {
               SELECTIVITY
               <AiFillQuestionCircle />
             </h6>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Extremely Selective
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Very Selective
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Selective
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Average
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Not Selective
               </label>
             </div>
@@ -435,8 +435,8 @@ const Filter = () => {
           <hr />
           <div className="religiousAffiliation">
             <h6>RELIGIOUS AFFILIATION</h6>
-            <div class="input-group mb-3">
-              <select class="custom-select" id="inputGroupSelect01">
+            <div className="input-group mb-3">
+              <select className="custom-select" id="inputGroupSelect01">
                 <option selected>Any</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -450,58 +450,58 @@ const Filter = () => {
               GOOD FOR
               <AiFillQuestionCircle />
             </h6>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Veterans
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 International Students
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Adult Learners
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Low-Income Students
               </label>
             </div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="defaultCheck1"
               />
-              <label class="form-check-label" for="defaultCheck1">
+              <label className="form-check-label" for="defaultCheck1">
                 Middle-Class Students
               </label>
             </div>
@@ -512,8 +512,8 @@ const Filter = () => {
               STARTING SALARY AFTER GRADUAION
               <AiFillQuestionCircle />
             </h6>
-            <div class="input-group mb-3">
-              <select class="custom-select" id="inputGroupSelect01">
+            <div className="input-group mb-3">
+              <select className="custom-select" id="inputGroupSelect01">
                 <option selected>Any</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
